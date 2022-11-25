@@ -23,8 +23,8 @@ public class Application {
     @Column(name = "state")
     private int state;
     @ManyToOne()
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "applicant_id")
+    private Applicant applicant;
     @ManyToOne()
     @JoinColumn(name = "bootcamp_id")
     private Bootcamp bootcamp;
